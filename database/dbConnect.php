@@ -10,9 +10,9 @@ class dbConnect
     //PDO object
     private $pdo;
 
-    public function __construct($databaseName)
+    public function __construct()
     {
-        $this->fileName = $_SERVER['DOCUMENT_ROOT'].'database/'.$databaseName;
+        $this->fileName = $_SERVER['DOCUMENT_ROOT'].'database/newsfeed.sqlite';
         //Create PDO connection
         // Create (connect to) SQLite database in file
         $dsn = "sqlite:$this->fileName";
