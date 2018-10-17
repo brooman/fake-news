@@ -5,7 +5,7 @@ declare(strict_types=1);
 class dbConnect
 {
     //Config
-    private $fileName = 'newsfeed.sqlite';
+    private $fileName = __DIR__.'/newsfeed.sqlite';
 
     //PDO object
     private $pdo;
@@ -14,8 +14,7 @@ class dbConnect
     {
         //Create PDO connection
         // Create (connect to) SQLite database in file
-        $dsn = "sqlite:$fileName";
-
+        $dsn = "sqlite:$this->fileName";
         $this->pdo = new PDO($dsn);
         // Set errormode to exceptions
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE,

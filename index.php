@@ -8,8 +8,7 @@ require __DIR__.'/database/dbConnect.php';
 $database = new dbConnect();
 
 //Build array of data
-$query = 'SELECT * FROM post ORDER BY post.creationdate LIMIT 25';
-$params = [];
+$query = 'SELECT * FROM posts LIMIT 25';
 $data = $database->getData($query, $params);
 
 //View
