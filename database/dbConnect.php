@@ -5,13 +5,14 @@ declare(strict_types=1);
 class dbConnect
 {
     //Config
-    private $fileName = __DIR__.'/newsfeed.sqlite';
+    private $fileName = '';
 
     //PDO object
     private $pdo;
 
-    public function __construct()
+    public function __construct($databaseName)
     {
+        $this->fileName = $_SERVER['DOCUMENT_ROOT'].'database/'.$databaseName;
         //Create PDO connection
         // Create (connect to) SQLite database in file
         $dsn = "sqlite:$this->fileName";

@@ -22,8 +22,10 @@ if (isset($_POST['username'])) {
 }
 
 //View
-require __DIR__.'/views/header.php';
+die(var_dump($_SERVER['DOCUMENT_ROOT'].'/views/header.php'));
 
-require __DIR__.'/views/components/loginform.php';
+require $_SERVER['DOCUMENT_ROOT'].'/views/header.php';
 
-require __DIR__.'/views/footer.php';
+require $_SERVER['DOCUMENT_ROOT'].'/views/components/loginform.php';
+
+require $_SERVER['DOCUMENT_ROOT'].'/views/footer.php';
