@@ -1,14 +1,23 @@
-<form method="post">
-    <fieldset>
-        <legend>Login</legend>
-        <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </fieldset>
-</form>
+<div class="jumbotron">
+    <form method="post">
+        <form>
+            <div class="form-group row">
+                <div class="col-sm-12 col-md-4">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text" class="form-control here" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12 col-md-4">
+                    <label for="Password">Password</label>
+                    <input id="Password" name="Password" type="text" class="form-control here" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12 col-md-4">
+                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </form>
+</div>
