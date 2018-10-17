@@ -2,7 +2,7 @@
     <fieldset>
         <legend>Login</legend>
         <div class="form-group">
-            <label for="username">Email address</label>
+            <label for="username">Username</label>
             <input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
         </div>
         <div class="form-group">
