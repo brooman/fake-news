@@ -25,11 +25,11 @@ class dbConnect
      * Get data from database.
      *
      * @param string $query
-     * @param array  $params
+     * @param array  $params (Optional)
      *
      * @return array
      */
-    public function getData(string $query, array $params): array
+    public function getData(string $query, ?array $params = []): array
     {
         $sth = $this->pdo->prepare($query);
         $sth->execute($params);
@@ -41,11 +41,11 @@ class dbConnect
      * INSERT / UPDATE / DELETE data.
      *
      * @param string $query
-     * @param array  $params
+     * @param array  $params (Optional)
      *
      * @return array
      */
-    public function setData(string $query, array $params): array
+    public function setData(string $query, ?array $params = []): array
     {
         $sth = $this->pdo->prepare($query);
         $sth->execute($params);
