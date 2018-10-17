@@ -22,7 +22,6 @@ if (isset($_POST['username'])) {
 }
 
 //View
-die(var_dump($_SERVER['DOCUMENT_ROOT'].'/views/header.php'));
 
 require $_SERVER['DOCUMENT_ROOT'].'/views/header.php';
 
