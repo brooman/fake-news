@@ -1,12 +1,17 @@
 <?php foreach ($posts as $post): ?>
-<div class="card text-white bg-dark mt-3">
-    <div class="card-header">
+<div class="jumbotron">
+    <h2 class="display-3">
         <?= $post['title']; ?>
-    </div>
-    <div class="card-body">
-        <p class="card-text">
-            <?= $post['content']; ?>
-        </p>
-    </div>
+    </h2>
+    <p>
+        Author
+    </p>
+    <p class="lead">
+        <?= $post['content']; ?>
+    </p>
+    <p>
+        <?= $post['creationdate']; ?>
+    </p>
 </div>
+
 <?php endforeach;
