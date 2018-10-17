@@ -34,7 +34,7 @@ class dbConnect
         $sth = $this->pdo->prepare($query);
         $sth->execute($params);
 
-        return $sth->fetchAll();
+        return $sth->fetchAll(PDO::FETCH_ASSOC);
     }
 
     /**
