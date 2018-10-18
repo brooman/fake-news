@@ -10,14 +10,15 @@ if (isset($_POST['username'])) {
     $database = new dbConnect();
 
     //Get password from DB
-    $query = 'SELECT user.password FROM user WHERE username = :username';
+    $query = 'SELECT user.id, user.password FROM user WHERE username = :username';
     $params = [
         ':username' => $_POST['username'],
     ];
     $return = $database->getData($query, $params);
 
     if (password_verify($_POST['password'], $return[0]['password'])) {
-        $_SESSION['loggedIn'] = true;
+        $_SESSION['logged_in'] = true;
+        $_SESSION['user_id'] = $return[0]['id'];
         header('location: /admin/panel.php');
     }
 }
