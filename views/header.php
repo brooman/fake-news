@@ -22,11 +22,17 @@
         <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
+                <?php if (!$_SESSION['loggedIn']): ?>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Log in</a>
                 </li>
+                <?php else: ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log out</a>
+                </li>
+                <?php endif; ?>
             </ul>
         </div>
     </nav>
