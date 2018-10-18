@@ -5,7 +5,7 @@ declare(strict_types=1);
 session_start();
 
 if (!$_SESSION['loggedIn']) {
-    header('location: /login.php');
+    header('location: /admin/login.php');
 }
 
 //View

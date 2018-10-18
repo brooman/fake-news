@@ -13,5 +13,4 @@
         <?= $post['creationdate']; ?>
     </p>
 </div>
-
 <?php endforeach;
