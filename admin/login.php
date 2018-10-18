@@ -18,6 +18,7 @@ if (isset($_POST['username'])) {
 
     if (password_verify($_POST['password'], $return[0]['password'])) {
         $_SESSION['loggedIn'] = true;
+        header('location: /admin/panel.php');
     }
 }
 
