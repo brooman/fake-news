@@ -12,6 +12,6 @@ if (!$_SESSION['loggedIn']) {
 
 require $_SERVER['DOCUMENT_ROOT'].'/views/header.php';
 
-require $_SERVER['DOCUMENT_ROOT'].'/views/components/adminpanel.php';
+require $_SERVER['DOCUMENT_ROOT'].'/views/adminpanel.php';
 
 require $_SERVER['DOCUMENT_ROOT'].'/views/footer.php';
