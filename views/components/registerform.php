@@ -3,7 +3,7 @@
     <div class="card-body">
         <form method="post">
             <div class="form-group row">
-                <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12">
                     <label for="name">Name</label>
                     <input id="name" name="name" type="text" class="form-control here" required="required">
                 </div>
