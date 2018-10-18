@@ -6,7 +6,7 @@ session_start();
 
 //Check login
 if (isset($_POST['username'])) {
-    require __DIR__.'/database/dbConnect.php';
+    require $_SERVER['DOCUMENT_ROOT'].'/database/dbConnect.php';
     $database = new dbConnect();
 
     //Get password from DB
