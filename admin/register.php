@@ -14,7 +14,7 @@ if (isset($_POST['username'])) {
     $params = [
         ':name' => $_POST['name'],
         ':username' => $_POST['username'],
-        ':password' => password_hash($_POST['password']),
+        ':password' => password_hash($_POST['password'], PASSWORD_BCRYPT),
     ];
     $database->insertData();
 
