@@ -14,9 +14,9 @@ if (isset($_POST['username'])) {
     $params = [
         ':username' => $_POST['username'],
     ];
-    $database->getData();
+    $return = $database->getData($query, $params);
 
-    if (password_verify($_POST['password'], $password)) {
+    if (password_verify($_POST['password'], $return[0]['password'])) {
         $_SESSION['loggedIn'] = true;
     }
 }

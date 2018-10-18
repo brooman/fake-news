@@ -43,10 +43,8 @@ class dbConnect
      *
      * @param string $query
      * @param array  $params (Optional)
-     *
-     * @return array
      */
-    public function setData(string $query, ?array $params = []): array
+    public function setData(string $query, ?array $params = [])
     {
         $sth = $this->pdo->prepare($query);
         $sth->execute($params);

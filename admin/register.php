@@ -16,7 +16,7 @@ if (isset($_POST['username'])) {
         ':username' => $_POST['username'],
         ':password' => password_hash($_POST['password'], PASSWORD_BCRYPT),
     ];
-    $database->setData();
+    $database->setData($query, $params);
 
     header('location: login.php');
 }
