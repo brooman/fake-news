@@ -7,6 +7,8 @@ require __DIR__.'/vendor/autoload.php';
 
 use EasyConnect\Easyconnect;
 
+session_start();
+
 $database = new EasyConnect();
 
 //Build array of data
