@@ -1,1 +1,3 @@
-<p>This is the admin panel</p>
+<div class="row">
+
+</div>

@@ -2,12 +2,15 @@
 
 declare(strict_types=1);
 
+require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
+
+use EasyConnect\EasyConnect;
+
 session_start();
 
 //Check if post data is submitted
 if (isset($_POST['username'])) {
-    require $_SERVER['DOCUMENT_ROOT'].'/database/dbConnect.php';
-    $database = new dbConnect();
+    $database = new EasyConnect();
 
     //Check if username is already taken
     $validationQuery = 'SELECT user.username FROM user WHERE user.username = :username';
@@ -17,7 +20,6 @@ if (isset($_POST['username'])) {
 
     //If not add user & redirect to login page
     if (!empty($database->getData($validationQuery, $params))) {
-
         //Create user
         $insertQuery = 'INSERT INTO user (id, name, username, password) VALUES (NULL, :name, :username, :password)';
         $params = [

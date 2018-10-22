@@ -2,12 +2,15 @@
 
 declare(strict_types=1);
 
+require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
+
+use EasyConnect\EasyConnect;
+
 session_start();
 
 //Check login
 if (isset($_POST['username'])) {
-    require $_SERVER['DOCUMENT_ROOT'].'/database/dbConnect.php';
-    $database = new dbConnect();
+    $database = new EasyConnect();
 
     //Get password from DB
     $query = 'SELECT user.id, user.password FROM user WHERE username = :username';

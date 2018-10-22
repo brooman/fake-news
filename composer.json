@@ -1,0 +1,5 @@
+{
+    "require": {
+        "laykith/easyconnect": "dev-master"
+    }
+}

@@ -24,7 +24,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../index.php">Home</a>
                 </li>
-                <?php if (!$_SESSION['loggedIn']): ?>
+                <?php if (!$_SESSION['logged_in']): ?>
                 <li class="nav-item">
                     <a class="nav-link" href="../admin/login.php">Log in</a>
                 </li>

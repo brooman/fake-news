@@ -8,6 +8,4 @@ if (!$_SESSION['logged_in']) {
     header('location: /admin/login.php');
 }
 
-if (!$_POST['']) {
-} else {
-}
+print_r($_POST);

@@ -3,8 +3,11 @@
 declare(strict_types=1);
 
 //Logic files
-require __DIR__.'/database/dbConnect.php';
-$database = new dbConnect();
+require __DIR__.'/vendor/autoload.php';
+
+use EasyConnect\Easyconnect;
+
+$database = new EasyConnect();
 
 //Build array of data
 $query = 'SELECT * FROM posts LIMIT 25';
