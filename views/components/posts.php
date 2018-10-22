@@ -5,13 +5,13 @@
             <?= $post['title']; ?>
         </h2>
         <p>
-            Author
+            <?= $post['name']; ?>
         </p>
         <p class="lead">
             <?= $post['content']; ?>
         </p>
         <p>
-            <?= $post['creationdate']; ?>
+            <?= date('h:m d M Y', $post['creationdate']); ?>
         </p>
     </div>
     <?php endforeach; ?>

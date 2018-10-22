@@ -12,7 +12,10 @@ session_start();
 $database = new EasyConnect();
 
 //Build array of data
-$query = 'SELECT * FROM posts LIMIT 25';
+$query =
+'SELECT posts.title, posts.content, posts.creationdate, user.name FROM posts
+INNER JOIN user ON posts.user_id = user.id LIMIT 25';
+
 $posts = $database->getData($query, $params);
 
 //View
