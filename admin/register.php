@@ -19,7 +19,7 @@ if (isset($_POST['username'])) {
     ];
 
     //If not add user & redirect to login page
-    if (!empty($database->getData($validationQuery, $params))) {
+    if (empty($database->getData($validationQuery, $params))) {
         //Create user
         $insertQuery = 'INSERT INTO user (id, name, username, password) VALUES (NULL, :name, :username, :password)';
         $params = [
@@ -31,11 +31,22 @@ if (isset($_POST['username'])) {
 
         //Redirect to login
         header('location: login.php');
+    } else {
+        $alert = [
+            'type' => 'warning',
+            'header' => 'Error!',
+            'message' => 'That username seems to be taken! Try another one.',
+        ];
     }
 }
 
 //View
 require $_SERVER['DOCUMENT_ROOT'].'/views/header.php';
+
+if (isset($alert)) {
+    require $_SERVER['DOCUMENT_ROOT'].'/views/components/alert.php';
+}
+
 require $_SERVER['DOCUMENT_ROOT'].'/views/components/registerform.php';
 
 require $_SERVER['DOCUMENT_ROOT'].'/views/footer.php';
