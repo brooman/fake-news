@@ -22,16 +22,19 @@ if (isset($_POST['username'])) {
     if (empty($database->getData($validationQuery, $params))) {
         //Create user
         $insertQuery = 'INSERT INTO user (id, name, username, password) VALUES (NULL, :name, :username, :password)';
+
         $params = [
         ':name' => strip_tags($_POST['name']),
         ':username' => strip_tags($_POST['username']),
         ':password' => password_hash($_POST['password'], PASSWORD_BCRYPT),
         ];
+
         $database->setData($insertQuery, $params);
 
         //Redirect to login
         header('location: login.php');
     } else {
+        //If database return wasn't empty (User already exists).
         $alert = [
             'type' => 'warning',
             'header' => 'Error!',
