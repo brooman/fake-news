@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laykith/EasyConnect.git",
-                "reference": "f2b610b12c1d4f2f9224e8d8ea186b3feb81f4d0"
+                "reference": "9a7d89c54d251f7119e9a410466baf1063b54813"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laykith/EasyConnect/zipball/f2b610b12c1d4f2f9224e8d8ea186b3feb81f4d0",
-                "reference": "f2b610b12c1d4f2f9224e8d8ea186b3feb81f4d0",
+                "url": "https://api.github.com/repos/laykith/EasyConnect/zipball/9a7d89c54d251f7119e9a410466baf1063b54813",
+                "reference": "9a7d89c54d251f7119e9a410466baf1063b54813",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
                 }
             ],
             "description": "A simple PDO manager to manage connections and reduce code in non-framework PHP scripts.",
-            "time": "2018-10-22T08:55:55+00:00"
+            "time": "2018-10-26T21:54:14+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
