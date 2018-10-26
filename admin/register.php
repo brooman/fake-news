@@ -21,7 +21,7 @@ if (isset($_POST['username'])) {
     //If not add user & redirect to login page
     if (empty($database->getData($validationQuery, $params))) {
         //Create user
-        $insertQuery = 'INSERT INTO user (id, name, username, password) VALUES (NULL, :name, :username, :password)';
+        $insertQuery = 'INSERT INTO user (name, username, password) VALUES (:name, :username, :password)';
 
         $params = [
         ':name' => strip_tags($_POST['name']),
