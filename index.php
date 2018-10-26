@@ -16,7 +16,7 @@ $query =
 'SELECT posts.title, posts.content, posts.creationdate, user.name FROM posts
 INNER JOIN user ON posts.user_id = user.id ORDER BY posts.creationdate DESC LIMIT 25';
 
-$posts = $database->getData($query, $params);
+$posts = $database->getData($query);
 
 //View
 require __DIR__.'/views/header.php';
