@@ -8,6 +8,7 @@ CREATE TABLE posts (
     user_id integer NOT NULL,
     title varchar(256) NOT NULL,
     content text NOT NULL,
+    likes integer NOT NULL DEFAULT 0,
     creationdate datetime NOT NULL,
     CONSTRAINT posts_user FOREIGN KEY (user_id)
     REFERENCES user (id)
