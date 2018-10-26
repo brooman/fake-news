@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+
+# Enable Rewrite Engine
+RewriteEngine On
+RewriteBase /
+
+# Redirect index.php to /
+RewriteCond %{QUERY_STRING} ^$
+RewriteCond %{REQUEST_METHOD} !^POST$
+RewriteRule ^index\.php$ / [R=301,L]
+
+</IfModule>
+
+# Redirect 403 Forbidden
+RedirectMatch 403 ^/database/?$
+RedirectMatch 403 ^/vendor/?$
+RedirectMatch 403 ^/views/?$
+
+# Error Documents
+ErrorDocument 403 /error/403.php 
+ErrorDocument 404 /error/404.php
+
+# Protect our .env
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
