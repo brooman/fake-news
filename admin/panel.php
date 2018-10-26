@@ -14,20 +14,16 @@ if (!$_SESSION['logged_in']) {
     header('location: /admin/login.php');
 }
 
-//Check for $_POST data and insert into database
-if ($_POST['post_content']) {
-    $database = new EasyConnect();
+//Get name of logged in user
+$database = new EasyConnect();
 
-    $query = 'INSERT INTO posts (id, user_id, title, content, creationdate) VALUES (NULL, :user, :title, :content, :creationdate)';
-    $params = [
-        ':user' => $_SESSION['user_id'],
-        ':title' => strip_tags($_POST['post_title']),
-        ':content' => strip_tags($_POST['post_content']),
-        ':creationdate' => time(),
-    ];
+$query = 'SELECT user.name FROM user WHERE user.id = :user_id';
+$params = [
+    ':user_id' => $_SESSION['user_id'],
+];
+$result = $database->getData($query, $params);
 
-    $database->setData($query, $params);
-}
+$name = $result[0]['name'];
 
 //Load Views
 
