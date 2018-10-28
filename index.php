@@ -13,7 +13,7 @@ $database = new EasyConnect();
 
 //Build array of data
 $query =
-'SELECT posts.title, posts.content, posts.creationdate, user.name FROM posts
+'SELECT posts.id, posts.title, posts.content, posts.likes, posts.creationdate, user.name FROM posts
 INNER JOIN user ON posts.user_id = user.id ORDER BY posts.creationdate DESC LIMIT 25';
 
 $posts = $database->getData($query);

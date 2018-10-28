@@ -1,3 +1,35 @@
 body {
     background-color: #313131;
 }
+
+.card-img-top {
+    padding-top: 15px;
+}
+
+.like-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.like-button:hover {
+    animation: likehover 1s;
+    cursor: pointer;
+}
+
+
+@keyframes likehover{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+    }
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+}
