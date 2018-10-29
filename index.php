@@ -5,7 +5,7 @@ declare(strict_types=1);
 //Logic files
 require __DIR__.'/vendor/autoload.php';
 
-use EasyConnect\Easyconnect;
+use EasyConnect\EasyConnect;
 
 session_start();
 
