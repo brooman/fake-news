@@ -15,7 +15,8 @@
                     <span id="like-count-<?= $post['id']; ?>">
                         <?= $post['likes']; ?>
                     </span>
-                    <a class="like-button" id="liker-<?= $post['id']; ?>">👍</a>
+                    <a class="like-button" id="liker-<?= $post['id']; ?>"
+                        data-id="<?= $post['id']; ?>">👍</a>
                 </div>
             </div>
             <hr class="mt-0 mb-4">
