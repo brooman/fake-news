@@ -24,7 +24,7 @@
                         its
                         previous version</p>
                 </div>
-                <button class="btn btn-primary">Edit posts</button>
+                <button class="btn btn-primary disabled">Edit posts [NYI]</button>
             </div>
         </div>
         <div class="col-sm-12 col-md-4">
