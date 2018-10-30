@@ -8,7 +8,7 @@
             <div class="d-flex justify-content-between">
                 <p>
                     <?= $post['name']; ?><br>
-                    <?= date('h:m d M Y', $post['creationdate']); ?>
+                    <?= date('h:m d M Y', intval($post['creationdate'])); ?>
                 </p>
                 <div class="like-container">
                     <span id="like-count-<?= $post['id']; ?>">
