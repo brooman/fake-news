@@ -13,8 +13,8 @@ First PHP assignment for Webbutvecklare @ Yrgo
 - [Composer](https://getcomposer.org/) - To download dependencies
 
 You might want to use
-[Git](https://git-scm.com/) - To clone the repository
-[Apache Server](https://www.mamp.info/en/) - To run the application
+- [Git](https://git-scm.com/) - To clone the repository
+- [Apache Server](https://www.mamp.info/en/) - To run the application
 
 ### Installing
 
@@ -34,3 +34,4 @@ You might want to use
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
