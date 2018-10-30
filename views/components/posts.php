@@ -20,7 +20,7 @@
             </div>
             <hr class="mt-0 mb-4">
             <p class="lead">
-                <?= $post['content']; ?>
+                <?= nl2br($post['content']); ?>
             </p>
         </div>
     </div>
