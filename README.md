@@ -20,7 +20,7 @@ You might want to use
 
 1. Clone the repo: `git clone https://github.com/laykith/fake-news.git`
 2. Run `Composer install`
-3. Start an apache development server
+4. Start an apache development server
 
 ## Built With
 
