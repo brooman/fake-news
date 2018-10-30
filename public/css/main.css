@@ -2,10 +2,6 @@ body {
     background-color: #313131;
 }
 
-.card-img-top {
-    padding-top: 15px;
-}
-
 .like-container {
     display: flex;
     justify-content: center;
