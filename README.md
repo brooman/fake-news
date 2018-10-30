@@ -5,7 +5,6 @@ First PHP assignment for Webbutvecklare @ Yrgo
 ## Testers
 
 - [Adrian Jungnelius](https://github.com/AdrianJung) - Windows
--
 
 ## Installation
 
@@ -25,8 +24,8 @@ You might want to use
 
 ## Built With
 
-* [LUX](https://bootswatch.com/lux/) - Bootstrap Theme
-* [EasyConnect](https://packagist.org/packages/laykith/easyconnect) - Database connection tool
+- [LUX](https://bootswatch.com/lux/) - Bootstrap Theme
+- [EasyConnect](https://packagist.org/packages/laykith/easyconnect) - Database connection tool
 
 ## Author
 
