@@ -20,12 +20,12 @@ You might want to use
 
 1. Clone the repo: `git clone https://github.com/laykith/fake-news.git`
 2. Run `Composer install`
-4. Start an apache development server
+3. Start an apache development server
 
 ## Built With
 
-- [LUX](https://bootswatch.com/lux/) - Bootstrap Theme
-- [EasyConnect](https://packagist.org/packages/laykith/easyconnect) - Database connection tool
+- [LUX](https://bootswatch.com/lux/) Bootstrap Theme
+- [EasyConnect](https://packagist.org/packages/laykith/easyconnect) Database connection tool
 
 ## Author
 
@@ -33,4 +33,5 @@ You might want to use
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
