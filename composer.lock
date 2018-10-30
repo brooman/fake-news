@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a60f09f02dfa113cc4b08a72d4aedd0",
+    "content-hash": "52eb74034e0d40ae4bec31482b828a9d",
     "packages": [
         {
             "name": "laykith/easyconnect",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laykith/EasyConnect.git",
@@ -97,9 +97,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "laykith/easyconnect": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

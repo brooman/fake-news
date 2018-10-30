@@ -1,5 +1,5 @@
 {
     "require": {
-        "laykith/easyconnect": "dev-master"
+        "laykith/easyconnect": "1.0"
     }
 }
