@@ -2,7 +2,6 @@
     <?php foreach ($posts as $post): ?>
     <div class="row">
         <div class="card bg-primary mb-4 col-sm-12 col-md-8 offset-md-2">
-            <img class="card-img-top" src="" alt="Card image cap">
             <h2 class="display-4 text-white">
                 <?= $post['title']; ?>
             </h2>
