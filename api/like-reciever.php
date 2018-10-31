@@ -12,19 +12,13 @@ $database = new EasyConnect();
 //Recieved request
 $request = json_decode(file_get_contents('php://input'));
 
-//Fetch likes
-$fetch_query = 'SELECT likes FROM posts WHERE posts.id = :id';
-$params = [
-    ':id' => $request->id,
-];
-
-$response = $database->getData($fetch_query, $params);
-
-//Update
-$insert_query = 'UPDATE posts SET likes = :likes WHERE posts.id = :id';
-$params = [
+if (isset($request->id) && isset($request->likes)) {
+    //Update
+    $insert_query = 'UPDATE posts SET likes = likes + :likes WHERE posts.id = :id';
+    $params = [
     ':likes' => $response[0]['likes'] + $request->likes,
     ':id' => $request->id,
 ];
 
-$database->setData($insert_query, $params);
+    $database->setData($insert_query, $params);
+}
