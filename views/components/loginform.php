@@ -18,6 +18,7 @@
                 <div class="form-group row">
                     <div class="col-sm-12">
                         <button name="submit" type="submit" class="btn btn-success">Submit</button>
+                        <a href="/admin/register.php" class="btn btn-info">Register</a>
                     </div>
                 </div>
             </form>
