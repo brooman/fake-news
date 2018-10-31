@@ -27,11 +27,20 @@ if (isset($_POST['post_content'])) {
     ];
 
     $database->setData($query, $params);
+    $alert = [
+        'type' => 'success',
+        'header' => 'Success!',
+        'message' => 'Your post has been uploaded.',
+    ];
 }
 
 //Load Views
 
 require $_SERVER['DOCUMENT_ROOT'].'/views/header.php';
+
+if (isset($alert)) {
+    require $_SERVER['DOCUMENT_ROOT'].'/views/components/alert.php';
+}
 
 require $_SERVER['DOCUMENT_ROOT'].'/views/newpost.php';
 

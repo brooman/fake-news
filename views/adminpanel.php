@@ -13,7 +13,7 @@
                     <h4 class="card-title">Create new post</h4>
                     <p class="card-text">Click the button below to open the editor and publish your new post!</p>
                 </div>
-                <button class="btn btn-primary">New post</button>
+                <a href="/admin/newpost.php" class="btn btn-primary">New post</a>
             </div>
         </div>
         <div class="col-sm-12 col-md-4">
@@ -24,7 +24,7 @@
                         its
                         previous version</p>
                 </div>
-                <button class="btn btn-primary disabled">Edit posts [NYI]</button>
+                <a class="btn btn-primary disabled">Edit posts [NYI]</a>
             </div>
         </div>
         <div class="col-sm-12 col-md-4">
@@ -33,7 +33,7 @@
                     <h4 class="card-title">There isn't anything here yet...</h4>
                     <p class="card-text">...but there might be something here in the future!</p>
                 </div>
-                <button class="btn btn-primary disabled">???</button>
+                <a class="btn btn-primary disabled">???</a>
             </div>
         </div>
     </div>
